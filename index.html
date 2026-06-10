@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav Bandyopadhyay Maulik - Personal Webpage</title>
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --secondary-color: #3b82f6;
+            --text-color: #334155;
+            --bg-light: #f8fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            min-height: 100vh;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 30%;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .sidebar .subtitle {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .contact-info {
+            width: 100%;
+            font-size: 0.9rem;
+            border-top: 1px solid #334155;
+            padding-top: 20px;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+            word-break: break-word;
+        }
+
+        .contact-item strong {
+            color: #94a3b8;
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .contact-item a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            width: 70%;
+            padding: 50px;
+            overflow-y: auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .timeline-meta {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .timeline-detail {
+            margin-top: 5px;
+            font-size: 0.95rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: #eff6ff;
+            color: #1e40af;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .pub-list {
+            list-style-type: none;
+        }
+
+        .pub-list li {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        .pub-title {
+            font-weight: 600;
+        }
+
+        .pub-meta {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                padding: 30px 20px;
+            }
+            .main-content {
+                width: 100%;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <img src="your_profile_picture.jpg" alt="Utsav Bandyopadhyay Maulik" class="profile-img">
+        <h1>Utsav Bandyopadhyay</h1>
+        <p class="subtitle">PhD Candidate in Computer Science<br>National University of Singapore</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>Email</strong>
+                <a href="mailto:utsav2000@gmail.com">utsav2000@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>Phone</strong>
+                <span>+91 89029 59970</span>
+            </div>
+            <div class="contact-item">
+                <strong>Location</strong>
+                <span>Singapore / West Bengal, India</span>
+            </div>
+            <div class="contact-item">
+                <strong>LinkedIn</strong>
+                <a href="https://linkedin.com" target="_blank">Utsav Bandyopadhyay Maulik</a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        
+        <section id="about">
+            <h2>Research Interests</h2>
+            <p>I am a PhD student deeply passionate about pushing boundaries in Artificial Intelligence. My research interests span across:</p>
+            <div class="tags">
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Video Understanding</span>
+                <span class="tag">Sports Analytics</span>
+                <span class="tag">Vision Transformers</span>
+                <span class="tag">Large Language Models (LLMs)</span>
+                <span class="tag">Natural Language Processing</span>
+                <span class="tag">Generative AI</span>
+                <span class="tag">Agentic AI</span>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <h3>PhD in Computer Science</h3>
+                    <span>Jan 2026 — Jan 2030 (Expected)</span>
+                </div>
+                <p style="color: var(--secondary-color); font-weight: 500;">National University of Singapore (NUS), Singapore</p>
+                <p class="timeline-detail">School of Computing. Supervisor: Prof. Jin Song Dong</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <h3>MS (by Research) in Computer Science & Engineering</h3>
+                    <span>Jan 2023 — Jul 2025</span>
+                </div>
+                <p style="color: var(--secondary-color); font-weight: 500;">Indian Institute of Technology Kharagpur (IIT KGP), India</p>
+                <p class="timeline-detail">
+                    <strong>Coursework CGPA:</strong> 9.87/10.00 <br>
+                    <strong>Thesis:</strong> Enhancing Medical Domain Speech Recognition with Large Language Models (Grade: Excellent)
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <h3>Bachelor of Technology in Computer Science & Engineering</h3>
+                    <span>2018 — 2022</span>
+                </div>
+                <p style="color: var(--secondary-color); font-weight: 500;">Techno India Saltlake, MAKAUT, India</p>
+                <p class="timeline-detail"><strong>Coursework CGPA:</strong> 8.82/10.00</p>
+            </div>
+        </section>
+
+        <section id="experience">
