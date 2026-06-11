@@ -56,12 +56,16 @@
         }
 
         .univ-logo {
-            width: 140px; /* Adjust width to fit cleanly in your sidebar */
-            height: auto;
-            margin-bottom: 20px;
-            background-color: #ffffff; /* Gives it a clean white backdrop against the dark sidebar */
-            padding: 10px;
-            border-radius: 6px;
+            width: calc(100% + 60px); /* Expands the width to match the 30px left/right sidebar padding */
+            max-width: none;          /* Overrides any default constraints */
+            height: auto;             /* Keeps the scaling proportionate */
+            margin-left: -30px;       /* Pulls the image completely to the left edge */
+            margin-right: -30px;      /* Pulls the image completely to the right edge */
+            margin-top: -40px;        /* Optional: Pulls the logo up to flush with the very top edge */
+            margin-bottom: 25px;      /* Leaves a clean gap before your profile picture */
+            background-color: #ffffff; /* Gives it a solid white background block */
+            padding: 15px 0;          /* Adds some clean breathing room above and below the logo text */
+            display: block;
         }
         
         .sidebar h1 {
